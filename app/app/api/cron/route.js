@@ -45,7 +45,7 @@ export async function GET(req, res) {
 		from: "Weather News <reminder@ketencek.com>",
 		to: "idilaydindogan@gmail.com, idil_aydin@yahoo.com",
 		subject: "Daily Weather Report",
-		html: `<h1>${forecastData?.Headline?.Text}</h1>
+		html: `<h1">${forecastData?.Headline?.Text}</h1>
     <p>${forecastData?.Headline?.Category}</p>
     <ul>
     <li>Temp Min: ${forecastData.DailyForecasts[0].Temperature.Minimum.Value}° ${forecastData.DailyForecasts[0].Temperature.Minimum.Unit}</li>
